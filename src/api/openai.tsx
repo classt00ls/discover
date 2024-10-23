@@ -2,17 +2,16 @@
 import { anonApiCall } from "./apiCalls";
 
 /** Realiza el login mediante username/password */
-export const sendMessageS = (username: string, password: string): Promise<any> => {
+export const sendMessageToApi = (userText, systemText) => {
 
 	return new Promise((resolve, reject) => {
 
 		const params = {
-			email: username,
-			password
+			userText,
+			systemText
 		};
 		
-		anonApiCall.post("/user/auth/signin", params, {
-			//AxiosRequestConfig parameter
+		anonApiCall.post("/discover/openai", params, {
 			withCredentials: false //correct
 		  })
 			.then(async ({ data, status }) => { resolve(data); })
@@ -21,7 +20,7 @@ export const sendMessageS = (username: string, password: string): Promise<any> =
 }
 
 
-const processError = (error: any) => {
+const processError = (error) => {
     if (error.response) {
         const serverError = error.response.data;
         if(serverError.statusCode === 403) {

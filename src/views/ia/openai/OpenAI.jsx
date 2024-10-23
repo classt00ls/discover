@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { CButton, CCard, CCardBody, CCardHeader, CCol, CCollapse, CForm, CFormFloating, CFormInput, CFormLabel, CFormSelect, CNavbar, CRow, CTooltip } from '@coreui/react'
+import { CButton, CCard, CCardBody, CCardHeader, CCol, CCollapse, CForm, CFormFloating, CFormInput, CFormLabel, CFormSelect, CFormTextarea, CNavbar, CRow, CTooltip } from '@coreui/react'
 import { DocsExample } from 'src/shared'
+import { sendMessageToApi } from '../../../api/openai'
 
 const OpenAI = () => {
-  
-  const [role, setRole] = useState(1)
-  const [text, setText] = useState("S")
+
+  const [textSystem, setTextSystem] = useState("")
+  const [textUser, setTextUser] = useState("")
+  const [response, setResponse] = useState("")
   
 
   useEffect(() => {
@@ -17,7 +19,9 @@ const OpenAI = () => {
 
 
   const sendMessage = async () => {
-    console.log('Sending to api ... ', text)
+    
+    const response = await sendMessageToApi(textUser, textSystem);
+    setResponse(response.data.content);
   }
 
 
@@ -67,9 +71,21 @@ const OpenAI = () => {
             type="text"
             id="floatingInputValue"
             placeholder="name@example.com"
-            onChange={(e) => setText(e.target.value)}
+            onChange={(e) => setTextSystem(e.target.value)}
           />
-          <CFormLabel htmlFor="floatingInputValue">Introduce el texto</CFormLabel>
+          <CFormLabel htmlFor="floatingInputValue">Introduce el texto del rol system</CFormLabel>
+          
+        </CFormFloating>
+
+        <CFormFloating>
+          <CFormInput
+            className="mb-3"
+            type="text"
+            id="floatingInputValue"
+            placeholder="name@example.com"
+            onChange={(e) => setTextUser(e.target.value)}
+          />
+          <CFormLabel htmlFor="floatingInputValue">Introduce el texto del rol user</CFormLabel>
           
         </CFormFloating>
 
@@ -81,6 +97,18 @@ const OpenAI = () => {
         </CButton>
 
       </DocsExample>
+
+      <CFormFloating>
+                <CFormTextarea
+                  className="mb-3"
+                  type="text"
+                  id="floatingTextarea"
+                  placeholder="Leave a comment here"
+                  value={response}
+                ></CFormTextarea>
+                <CFormLabel htmlFor="floatingTextarea">Respuesta</CFormLabel>
+              </CFormFloating>
+
       
       </CCol>
 

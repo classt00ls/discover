@@ -1,8 +1,7 @@
 import axios from 'axios';
-import Configuration from '../configuration/config';
 import { authRequest, authResponse, requestError } from './interceptors';
 
-const API_URL = Configuration.API_URL;
+const API_URL = "http://localhost:3001";
 
 // Llamadas que requeriran de auth token
 export const authApiCall = axios.create({
