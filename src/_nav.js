@@ -28,14 +28,32 @@ const _nav = [
   },
   {
     component: CNavGroup,
-    name: 'Base',
-    to: '/base',
+    name: 'Discover',
+    to: '/discover',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
-        name: 'Collapse',
-        to: '/base/collapses',
+        name: 'DialogFlow',
+        to: '/discover/dialogflow',
+      },
+      {
+        component: CNavItem,
+        name: 'OpenAI',
+        to: '/discover/openai',
+      }
+    ],
+  },
+  {
+    component: CNavGroup,
+    name: 'Backend',
+    to: '/backend',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Tools',
+        to: '/backend/Tools',
       }
     ],
   },
@@ -44,18 +62,7 @@ const _nav = [
     component: CNavTitle,
     name: 'Extras',
   },
-  {
-    component: CNavGroup,
-    name: 'Pages',
-    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: 'Login',
-        to: '/login',
-      }
-    ],
-  },
+ 
   {
     component: CNavItem,
     name: 'Docs',
