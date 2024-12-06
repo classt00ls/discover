@@ -11,7 +11,7 @@ export const sendMessageToApi = (userText, systemText) => {
 			systemText
 		};
 		
-		anonApiCall.post("/discover/openai", params, {
+		anonApiCall.post("/discover/openai/text", params, {
 			withCredentials: false //correct
 		  })
 			.then(async ({ data, status }) => { resolve(data); })

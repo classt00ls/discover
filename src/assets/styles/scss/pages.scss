@@ -1,0 +1,424 @@
+/* PAGE: DASHBOARD */
+
+.dashboard-table {
+    background-color: white;
+    border-radius: 12px;
+}
+
+.dashboard-table .dashboardValue {
+	font-weight: 600;
+    color: #F5A038 !important;
+}
+
+.table-highlight {
+    background-color: #F5A038;
+    border-radius: 12px;
+}
+.table-highlight .dashboardValue {
+    font-weight: 600;
+    color: white !important;
+}
+
+/* PAGE: PANEL */
+
+/* Datatable filters */
+header.sc-dIouRR {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+nav.rdt_Pagination {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.radiusDatatableHeader .sc-dmRaPn {
+    border-top-left-radius: 12px!important;
+    border-top-right-radius: 12px!important;
+}
+.filterField {
+    width: 9rem;
+}
+.btnDeleteFilters {
+    background-color: #F5A038;
+}
+
+#btnFavorites.active, #btnFailed.active, #btnAll.active {
+    background-color: #D3D1E4;
+    border-color: #D3D1E4;
+    color: white;
+    box-shadow: none;
+}
+#btnFavorites, #btnFailed, #btnAll, #btnFavorites.disabled, #btnFailed.disabled, #btnAll.disabled {
+    background-color: white;
+    border-color: #D3D1E4;
+    color: black;
+    box-shadow: none;
+    font-size: 14px;
+}
+.btnDeleteFilters {
+    font-size: 14px;
+}
+.btnDeleteFilters img {
+    width: 20px;
+}
+
+/* Show cursor pointer on hover datatable row */
+.rdt_Table .rdt_TableRow:hover {
+    cursor: pointer;
+}
+
+/* Panel contacts legend */
+.contactsLegend li{
+    list-style-type: none;
+}
+
+/* PAGE: LEAD CARD DETAILS */
+
+.leadCard .label {
+    color: #838383;
+}
+.leadCard .labelName{
+    color: black;
+    font-weight: 600;
+}
+.leadCard .btnCall {
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: #F5A038;
+    border-color: #F5A038;
+    box-shadow: 3px 3px 3px 1px #EFEEF5;
+}
+.leadCard .btnCall:hover {
+    background-color: #D87100;
+    border-color: #D87100;
+}
+.leadCard .leadDate {
+    text-transform: uppercase;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 1px #EFEEF5;
+    padding: 0px;
+}
+.leadCard .leadDateTop {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #4B83C3;
+    color: white;
+    font-size: 13px;
+    padding: 0.3rem;
+}
+.leadCard .leadDateDay {
+    font-size: 23px;
+    font-weight: 600;
+    background-color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.leadCard .leadCardBox {
+    background-color: white;
+    border-radius: 12px;
+}
+.leadCard .statisticsTitle {
+    color: #4B83C3;
+}
+.leadCard .statisticsValue {
+    color: #F5A038;
+}
+.leadCard .btnCallLarge {
+    background-color: #F5A038;
+    border-color: #F5A038;
+    padding: 0.7em 1.2em;
+    text-transform: uppercase;
+}
+.leadCard .btnCallLarge:hover, .leadCard .btnCallLarge:focus {
+    background-color: #D87100;
+    border-color: #D87100;
+    box-shadow: none;
+}
+.leadCard .actionSwitch input{
+    width: 3em!important;
+    background-image: url("../images/switch-circle.png");
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.leadCard .actionSwitch input:disabled{
+    cursor: none;
+}
+.leadCard .btnSendEmail {
+    background-color: #8A8DBC;
+    border-color: #8A8DBC;
+    color: white;
+    box-shadow: none;
+}
+.leadCard .btnSendEmail:hover, .leadCard .btnSendEmail:active {
+    background-color: #514695;
+    border-color: #514695;
+    color: white;
+    box-shadow: none;
+}
+.leadHistoryTable {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.leadHistoryTable td {
+    padding: 0.8em 2em;
+    color: white!important;
+}
+.leadHistoryRow {
+    background-color: #4B83C3;
+}
+.leadHistorySystemRow {
+    /*border: 1px solid #4B83C3;*/
+    background-color: #D3D1E4;
+}
+.leadHistoryRow:hover {
+    background-color: #16528E;
+}
+.leadHistorySystemRow:hover {
+    background-color: #8A8DBC;
+}
+
+#cardFormEmail #formEmail, #cardFormAction #formMessage {
+    height: 12rem;
+}
+
+
+/* PAGE: LOGIN */
+
+.loginContainer, .registerContainer {
+    height: auto;
+    max-width: none;
+    position: absolute;
+    background-color: #4B83C3;
+    padding-bottom:50px;
+}
+
+.registerWrapper {
+    margin: auto;
+    vertical-align: middle;
+    color: black;
+    margin-top: 6rem;
+}
+
+.loginWrapper {
+    margin: auto;
+    vertical-align: middle;
+    color: white;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.loginHeader {
+    font-size: 1.25em;
+}
+
+.logoWrapper img {
+    width: 150px;
+}
+
+#imgRevealPass {
+    margin-left: -40px;
+}
+
+.submitLogin {
+    background-color: #514695;
+    border: none;
+    color: white;
+    
+}
+
+.submitLogin:hover, .submitLogin:active, .submitLogin:focus {
+    background-color: #F5A038;
+    box-shadow: none;
+}
+
+.registerLink {
+    color: white;
+}
+
+.registerLink:hover {
+    color: gainsboro;
+}
+
+/* PAGE MY ACCOUNT */
+.accountContainer {
+    width: 80%;
+}
+.accountBox {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+}
+.accountBox .label {
+    color: #838383;
+}
+.accountGroup p {
+    margin-bottom: 0;
+}
+
+.accountGroup p.white {
+    color: white;
+}
+
+.accountGroup p.red {
+    color: red;
+}
+
+.buyPlanBorder {
+    border: #F5A038 solid 2px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.myAccountBtn, .btnAdminPrimary {
+    background-color: #4B83C3;
+    border: #4B83C3 solid 1px;
+    color: white;
+}
+.myAccountBtn:hover, .myAccountBtn:focus, .myAccountBtn:active, .myAccountBtn.disabled,
+.btnAdminPrimary:hover, .btnAdminPrimary:focus, .btnAdminPrimary:active, .btnAdminPrimary.disabled {
+    background-color: #16528E;
+    border: #16528E solid 1px;
+    color: white;
+    box-shadow: none;
+}
+.btnBuyPlan, .btnDeleteFilters, .deleteButton, .modal-body button.btn-primary {
+    background-color: #F5A038;
+    border: #F5A038 solid 1px;
+    color: white;
+}
+.modal-body button.btn-secondary, .btnAdminSecundary {
+    background-color: #D3D1E4;
+    border: #D3D1E4 solid 1px;
+    color: white;
+}
+.btnBuyPlan:hover, .btnBuyPlan:focus, .btnBuyPlan:active, .btnBuyPlan.disabled,
+.btnDeleteFilters:hover, .btnDeleteFilters:focus, .btnDeleteFilters:active, .btnDeleteFilters.disabled,
+.deleteButton:hover, .deleteButton:focus, .deleteButton:active, .deleteButton.disabled,
+.modal-body button.btn-primary:hover, .modal-body button.btn-primary:focus, .modal-body button.btn-primary:active, .modal-body button.btn-primary.disabled {
+    background-color: #D87100;
+    border: #D87100 solid 1px;
+    color: white;
+    box-shadow: none;
+}
+.modal-body button.btn-secondary:hover, .modal-body button.btn-secondary:focus, .modal-body button.btn-secondary:active, .modal-body button.btn-secondary.disabled,
+.btnAdminSecundary:hover, .btnAdminSecundary:focus, .btnAdminSecundary:active, .btnAdminSecundary.disabled {
+    background-color: #514695;
+    border: #514695 solid 1px;
+    color: white;
+    box-shadow: none;
+}
+.info-edit-company {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: red;
+}
+
+/* PAGE: STATISTICS */
+.chartBox {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+}
+.boxSelectUser {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 0rem 0.1rem 2.5rem 0.1rem;
+}
+.chartBox h5, .chartBox p {
+    color: #838383;
+}
+.barContainer {
+    width: 250px;
+    height: 300px;
+}
+
+.pieContainer {
+    width: 450px;
+    height: 300px;
+}
+
+.progressContainer {
+    width: 400px;
+    height: 300px;
+}
+
+.lineChartContainer {
+    width: 500px;
+    height: 250px;
+}
+
+/* PAGE: SUCCESS & CANCEL (Stripe) */
+.responseContainer {
+    height: 100%;
+    max-width: none;
+    position: absolute;
+}
+
+.responseWrapper {
+    margin: 10rem auto;
+    vertical-align: middle;
+}
+
+.responseHeader {
+    font-size: 1.25em;
+}
+
+#leadCardImage {
+    width: 100%
+}
+.leadCardInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PAGE: CLIENTES */
+.boxGeneralStatistics {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 0rem 0.1rem 2.5rem 0.1rem;
+    width: 85%;
+    margin: 0 auto 2rem auto;
+}
+
+/* PAGE: ADMIN */
+.adminBox {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* PAGE: USER INFO */
+.userinfoArrow {
+    flex: 0 0;
+}
+
+/* Media queries */
+
+@media (min-width: 1366px) {
+    .loginWrapper, .registerWrapper {
+        width: 25%;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .loginWrapper, .registerWrapper {
+        width: 45%;
+        margin-top: 3rem;
+    }
+    .accountContainer {
+        width: 85%;
+    }
+}
+
+@media (max-width: 962px) {
+    .loginWrapper, .registerWrapper {
+        width: 60%;
+    }
+    .accountContainer {
+        width: 95%;
+    }
+}

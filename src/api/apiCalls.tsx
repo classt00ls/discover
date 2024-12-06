@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { authRequest, authResponse, requestError } from './interceptors';
 
-const API_URL = "http://localhost:3001";
+const API_URL = "http://localhost:3000";
 
 // Llamadas que requeriran de auth token
 export const authApiCall = axios.create({

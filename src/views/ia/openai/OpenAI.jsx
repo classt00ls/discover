@@ -100,8 +100,7 @@ const OpenAI = () => {
 
       <CFormFloating>
                 <CFormTextarea
-                  className="mb-3"
-                  type="text"
+                  className="mb-10 w-100"
                   id="floatingTextarea"
                   placeholder="Leave a comment here"
                   value={response}
