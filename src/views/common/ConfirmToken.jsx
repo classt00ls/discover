@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { AuthApi } from "../../api/auth";
-import { CContainer } from '@coreui/react';
+import { CContainer, CSpinner } from '@coreui/react';
 
 const VerifyToken = () => {
 
@@ -30,10 +30,8 @@ const VerifyToken = () => {
 
 	return (
 		<CContainer sm className="loginContainer">
-			<div className="loginWrapper">
-				<h1 className="text-center mb-5 loginHeader">
-					{t('remote.'+messageCode)}
-				</h1>
+			<div className="d-flex justify-content-center">
+				<CSpinner component="span" aria-hidden="true" color="warning" />
 			</div>
 		</CContainer>
 	);

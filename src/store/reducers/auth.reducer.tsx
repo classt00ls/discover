@@ -1,4 +1,4 @@
-import { LOGIN_SUCCESS, LOGOUT_REQUEST, ME_SUCCESS } from "../actions/authActions";
+import { LOGIN_SUCCESS, LOGOUT_REQUEST, ME_SUCCESS, TOKEN_VERIFIED } from "../actions/authActions";
 
 const initialState = {
   logginIn: false, 
@@ -10,6 +10,13 @@ const initialState = {
 // A partir del estado inicial y de la action se actualiza el estado
 export function authReducer(state = initialState, action) {
   switch (action.type) {
+
+    case TOKEN_VERIFIED.type:
+      localStorage.setItem('access_token', action.payload);
+      return Object.assign({}, state, {
+        loggedIn: true,
+        logginIn: false
+      });
    
     case LOGOUT_REQUEST.type:
       localStorage.setItem('access_token', 'false');
