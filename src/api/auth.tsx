@@ -1,10 +1,10 @@
 import { authApiCall } from "./apiCalls";
-import store from "../store/store";
+import store from "../store/store.jsx";
 import { LOGOUT_REQUEST, TOKEN_VERIFIED } from "../store/actions/authActions";
 
 
 /** Verifica el token al llegar desde la web */
-const verifyToken = (token: string): Promise<any> => {
+const verifyToken = (token) => {
 	return new Promise((resolve, reject) => {
         let params = {token};
 
@@ -18,7 +18,7 @@ const verifyToken = (token: string): Promise<any> => {
 }
 
 
-const processError = (error: any) => {
+const processError = (error) => {
     if (error.response) {
         const serverError = error.response.data;
         if(serverError.statusCode === 403) {

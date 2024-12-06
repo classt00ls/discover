@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { AuthApi } from "../../api/auth";
 import { CContainer } from '@coreui/react';
 
-const ConfirmToken = (props: any) => {
+const VerifyToken = () => {
 
 	const { t } = useTranslation()
 	let [searchParams, setSearchParams] = useSearchParams();
@@ -39,4 +39,4 @@ const ConfirmToken = (props: any) => {
 	);
 }
 
-export default ConfirmToken;
+export default VerifyToken;

@@ -1,7 +1,6 @@
-import { AppState } from "../../Domain/Store"
 
 
-const initialState:AppState = {
+const initialState = {
 	sidebarShow: true,
 	sidebarUnfoldable: false,
 	showError: false,

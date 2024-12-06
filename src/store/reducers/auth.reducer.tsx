@@ -1,7 +1,6 @@
-import { IAuthState } from "../../Domain/Store";
 import { LOGIN_SUCCESS, LOGOUT_REQUEST, ME_SUCCESS } from "../actions/authActions";
 
-const initialState: IAuthState = {
+const initialState = {
   logginIn: false, 
   loggedIn: false, 
   user: null,
@@ -9,7 +8,7 @@ const initialState: IAuthState = {
 };
 
 // A partir del estado inicial y de la action se actualiza el estado
-export function authReducer(state: IAuthState = initialState, action): IAuthState {
+export function authReducer(state = initialState, action) {
   switch (action.type) {
    
     case LOGOUT_REQUEST.type:
